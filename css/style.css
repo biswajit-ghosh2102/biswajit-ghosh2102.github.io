@@ -116,6 +116,8 @@ body
 
 #home .content h1
 {
+    font-size: 60px;
+    margin-bottom: 50px;
     color: #fff;
     text-shadow: 4px 4px 2px rgb(14, 13, 13);
 }
