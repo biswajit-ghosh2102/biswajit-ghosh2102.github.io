@@ -123,15 +123,16 @@ body
 .sm a
 {
     color: #fff;
-    padding: 50px;
-    font-size: 25px;
-    margin: 0 10px;
+    padding: 7px;
+    font-size: 20px;
+    margin: 20px 20px;
     transition: .5s linear;
     text-decoration: none;
-    text-shadow: 4px 4px 2px rgb(0, 0, 0);
 }
 
 .sm a:hover
 {
+    background-color: #262A28;
     color: #ffff66;
+    border-radius: 50%;
 }
