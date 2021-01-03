@@ -92,3 +92,46 @@ body
 }
 
 /*Section-Home*/
+
+#home
+{
+    height: 100vh;
+    min-height: 500px;
+}
+
+#home .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content
+{
+    width: 100%;
+    color: #fff;
+}
+
+#home .content h1
+{
+    color: #fff;
+    text-shadow: 4px 4px 2px rgb(14, 13, 13);
+}
+
+.sm a
+{
+    color: #fff;
+    padding: 50px;
+    font-size: 25px;
+    margin: 0 10px;
+    transition: .5s linear;
+    text-decoration: none;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
+
+.sm a:hover
+{
+    color: #ffff66;
+}
