@@ -9,18 +9,15 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 html
 {
     scroll-behavior: smooth;
 }
-
 ::-webkit-scrollbar
 {
     width: 10px;
     background-color: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb
 {
     background-color: #353b48;
@@ -49,21 +46,18 @@ body
     z-index: 9999;
     transition: .3s linear;
 }
-
 .inner-width
 {
     max-width: 1000px;
     margin: auto;
     padding: 0 40px;
 }
-
 .nav-bar .inner-width
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo
 {
     width: 100px;
@@ -72,7 +66,27 @@ body
     background-size: contain;
     background-color: #BAAE98;
 }
+.menu-toggler
+{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
 
+.menu-toggler span
+{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
 .nav-bar-menu a
 {
     color: #fff;
@@ -82,7 +96,6 @@ body
     transition: .2s linear;
     text-decoration: none;
 }
-
 .nav-bar-menu a:hover
 {
     background-color: #262A28;
@@ -98,7 +111,6 @@ body
     height: 100vh;
     min-height: 500px;
 }
-
 #home .container
 {
     display: flex;
@@ -107,13 +119,11 @@ body
     height: 100%;
     text-align: center;
 }
-
 #home .content
 {
     width: 100%;
     color: #fff;
 }
-
 #home .content h1
 {
     font-size: 60px;
@@ -121,7 +131,6 @@ body
     color: #fff;
     text-shadow: 4px 4px 2px rgb(14, 13, 13);
 }
-
 .sm a
 {
     color: #fff;
@@ -131,10 +140,37 @@ body
     transition: .5s linear;
     text-decoration: none;
 }
-
 .sm a:hover
 {
     background-color: #262A28;
     color: #ffff66;
     border-radius: 50%;
+}
+
+/*Media Responsive*/
+
+@media screen and (max-width: 980px)
+{
+    .menu-toggler
+    {
+        display: block;
+    }
+    .nav-bar-menu
+    {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #353b48;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+    }
+    .nav-bar-menu a
+    {
+        display:block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
 }
