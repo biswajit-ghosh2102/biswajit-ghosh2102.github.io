@@ -171,17 +171,13 @@ section
 }
 @keyframes textanim
 {
-    25%
-    {
-        content: "a Freelancer";
-    }
     50%
     {
-        content: "a Developer";
+        content: "Developer";
     }
     75%
     {
-        content: "a Designer";
+        content: "Designer";
     }
 }
 .sm a
