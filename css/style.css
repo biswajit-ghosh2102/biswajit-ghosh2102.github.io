@@ -165,7 +165,7 @@ section
 }
 #home .content h1::after
 {
-    content: "Web Development";
+    content: "Full Stack Development";
     animation: textanim 10s linear infinite;
 
 }
@@ -173,7 +173,7 @@ section
 {
     50%
     {
-        content: "Designing";
+        content: "Web and Application Design";
     }
     75%
     {
