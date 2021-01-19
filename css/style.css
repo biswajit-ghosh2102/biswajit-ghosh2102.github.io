@@ -165,7 +165,7 @@ section
 }
 #home .content h1::after
 {
-    content: "a Freelancer";
+    content: "Web Development";
     animation: textanim 10s linear infinite;
 
 }
@@ -173,11 +173,11 @@ section
 {
     50%
     {
-        content: "a Developer";
+        content: "Designing";
     }
     75%
     {
-        content: "a Designer";
+        content: "Cyber Security";
     }
 }
 .sm a
