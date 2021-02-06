@@ -1,35 +1,28 @@
 /*Global*/
-*
-{
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
 }
-html
-{
+html{
     scroll-behavior: smooth;
 }
-::selection
-{
+::selection{
     background-color: #9efc0660;
 }
-::-webkit-scrollbar
-{
+::-webkit-scrollbar{
     width: 10px;
     background-color: #f1f1f1;
 }
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb{
     background-color: #353b48;
 }
-section
-{
+section{
     padding: 120px 0;
 }
-.section-title
-{
+.section-title{
     text-align: center;
     margin-bottom: 80px;
     position: relative;
@@ -37,8 +30,7 @@ section
     padding-bottom: 20px;
     color: #000;
 }
-.section-title::before
-{
+.section-title::before{
     content: "";
     position: absolute;
     width: 80px;
@@ -47,8 +39,7 @@ section
     bottom: 0;
     left: calc(50% - 40px);
 }
-.section-title::after
-{
+.section-title::after{
     content: "";
     position: absolute;
     width: 16px;
@@ -60,8 +51,7 @@ section
 }
 
 /*Navigation*/
-.navbar
-{
+.navbar{
     position: fixed;
     background-color: transparent;
     width: 100%;
@@ -70,28 +60,24 @@ section
     z-index: 999;
     transition: .3s linear;
 }
-.inner-width
-{
+.inner-width{
     max-width: 1000px;
     margin: auto;
     padding: 0 40px;
 }
-.navbar .inner-width
-{
+.navbar .inner-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo
-{
+.logo{
     width: 100px;
     height: 100px;
     background-image: url(../images/logo.png);
     background-size: contain;
     background-color:#241E20;
 }
-.menu-toggler
-{
+.menu-toggler{
     background: none;
     width: 30px;
     border: none;
@@ -101,8 +87,7 @@ section
     z-index: 999;
     display: none;
 }
-.menu-toggler span
-{
+.menu-toggler span{
     display: block;
     height: 3px;
     background-color: #fff;
@@ -110,61 +95,51 @@ section
     position: relative;
     transition: .3s linear;
 }
-.navbar-menu a
-{
+.navbar-menu a{
     color: #3835fd;
     font-size: 20px;
     font-weight: 500;
     margin-left: 30px;
     transition: .2s linear;
 }
-.navbar-menu a:hover
-{
+.navbar-menu a:hover{
     color: #48dbfb;
 }
-.sticky
-{
+.sticky{
     background-color:#F2E394;
     padding: 10px 0;
 }
-.sticky .logo
-{
+.sticky .logo{
     background-image: url(../images/logo.png);
 }
-.sticky .menu-toggler span
-{
+.sticky .menu-toggler span{
     background-color: #111;
 }
 
 /*Section1 - Home */
-#home
-{
+#home{
     height: 100vh;
     min-height: 500px;
     background: url(../images/background.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
-#home .inner-width
-{
+#home .inner-width{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     text-align: center;
 }
-#home .content
-{
+#home .content{
     width: 100%;
     color: #99fcff;
 }
-#home .content h1
-{
+#home .content h1{
     font-size: 60px;
     margin-bottom: 60px;
 }
-#home .content h1::after
-{
+#home .content h1::after{
     content: "Full Stack Development";
     animation: textanim 10s linear infinite;
 
@@ -180,24 +155,20 @@ section
         content: "Cyber Security";
     }
 }
-.sm a
-{
+.sm a{
     color: #006dfc;
     font-size: 25px;
     margin: 0 10px;
     transition: .2s linear;
     padding: 20px;
 }
-.sm a:hover
-{
+.sm a:hover{
     color: #ffeb33;
 }
-#home .buttons
-{
+#home .buttons{
     margin-top: 60px;
 }
-#home .buttons a
-{
+#home .buttons a{
     display: inline-block;
     margin: 30px 70px;
     background-color: #241E20;
@@ -211,33 +182,28 @@ section
     border-radius: 6px;
     transition: .2s linear;
 }
-#home .buttons a:hover
-{
+#home .buttons a:hover{
     color: #FF5733;
     background-color: #48dbfb;
 }
 
 /*Section 2 - About and Skills*/
 
-.about-content
-{
+.about-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.about-pic
-{
+.about-pic{
     height: 200px;
     border-radius: 10%;
     margin-right: 10px;
     box-shadow: 5px 5px 2px #000;
 }
-.about-text
-{
+.about-text{
     flex: 1;
 }
-.about-text h3
-{
+.about-text h3{
     margin: 10px 0;
     color: #444;
     font-size: 16px;
@@ -255,47 +221,40 @@ section
     border-radius: 50%;
     margin: 0 15px;
 }
-.about-text p
-{
+.about-text p{
     font-size: 17px;
     text-align: justify;
     line-height: 26px;
     margin-top: 20px;
 }
-.skills
-{
+.skills{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.skill
-{
+.skill{
     width: calc(50% - 20px);
     margin: 15px 0;
 }
-.skill-info
-{
+.skill-info{
     display: flex;
     justify-content: space-between;
 }
-.skill-bar
-{
+.skill-bar{
     height: 3px;
     background-color: #ddd;
     margin-top: 14px;
     position: relative;
 }
-.skill-bar::after
-{
+.skill-bar::after{
     content: "";
     position: absolute;
     height: 6px;
     background-color: #48dbfb;
     bottom: 0;
 }
-.html::after
-{
+.html::after{
     width: 90%;
 }
 .js::after
@@ -337,38 +296,34 @@ section.dark .section-title::after
 
 /*Section 3 - My Work*/
 
-.row
-{
+.row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.col
-{
+.col{
     flex: 50%;
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 33%;
+    max-height: 33%;
     box-sizing: border-box;
     padding: 10px;
 }
-.work
-{
+.work{
     background: #BF5C06;
     padding: 30px;
 }
-.name
-{
+.name{
     font-size: 20px;
     margin: 50px 0;
     text-transform: uppercase;
 }
-.work img
-{
-    width: 100px;
-    height: 100px;
+.work img{
+    width: 120px;
+    height: 120px;
     border-radius: 10%;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
 }
 
 
