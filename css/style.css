@@ -140,7 +140,7 @@ section{
     margin-bottom: 60px;
 }
 #home .content h1::after{
-    content: "Full Stack Development";
+    content: "Application Development";
     animation: textanim 10s linear infinite;
 
 }
