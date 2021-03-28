@@ -140,7 +140,7 @@ section{
     margin-bottom: 60px;
 }
 #home .content h1::after{
-    content: "App Development";
+    content: "App Desigining";
     animation: textanim 10s linear infinite;
 
 }
